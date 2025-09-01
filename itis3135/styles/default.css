@@ -1,0 +1,82 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8; /* Light background color */
+    color: #333333;            /* Default text color */
+    margin: auto;
+    width: 85%;
+    max-width: 900px;
+    line-height: 1.6;
+}
+
+/* Headings */
+h1 {
+    font-family: 'Georgia', serif;
+    color: #1a1a1a;
+    font-size: 2.5rem;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-family: 'Verdana', sans-serif;
+    color: #555555;
+    font-size: 1.8rem;
+    margin-bottom: 0.75em;
+}
+
+/* Paragraphs */
+p {
+    font-size: 1rem;
+    margin-bottom: 1em;
+}
+
+/* Footer Styles */
+footer {
+    margin-top: 2em;
+    padding-top: 1em;
+    border-top: 2px solid #ccc;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+footer nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #0066cc;
+    transition: color 0.3s ease;
+}
+
+footer nav a:hover {
+    color: #004499;
+    text-decoration: underline;
+}
+
+/* Navigation separators */
+footer nav a:not(:last-child)::after {
+    content: " ~ ";
+    color: #333333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    body {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    footer nav a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    footer nav a:not(:last-child)::after {
+        content: "";
+    }
+}
