@@ -56,27 +56,26 @@ footer nav a:not(:last-child)::after {
     content: " ~ ";
     color: #333333;
 }
+#navbar__list {
+    list-style-type: none;
+    color: #FFF;
+    margin: 0 auto 0 auto;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-width: 100%;
+    overflow: auto;
+}
 
-/* Responsive adjustments */
-@media (max-width: 600px) {
-    body {
-        width: 95%;
-    }
-
-    h1 {
-        font-size: 2rem;
-    }
-
-    h2 {
-        font-size: 1.5rem;
-    }
-
-    footer nav a {
-        display: block;
-        margin: 5px 0;
-    }
-
-    footer nav a:not(:last-child)::after {
-        content: "";
-    }
+#navbar__list li {
+    cursor: pointer;
+    background-color: #dddddd;
+    color: #000;
+    padding: 8px;
+    display:block;
+    width: 31%;
+    float:left;
+    border:1px solid #000;
+    text-align: center;
 }
