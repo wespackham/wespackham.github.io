@@ -39,8 +39,16 @@ footer {
     font-size: 0.9rem;
 }
 
-footer nav a {
-    margin: 0 10px;
+header nav {
+    margin-top: 2em;
+    padding-top: 1em;
+    border-top: 2px solid #ccc;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+header nav a, footer nav a {
+    margin: 0 3px 0 2px;
     text-decoration: none;
     color: #0066cc;
     transition: color 0.3s ease;
@@ -52,8 +60,8 @@ footer nav a:hover {
 }
 
 /* Navigation separators */
-footer nav a:not(:last-child)::after {
-    content: " ~ ";
+header nav a:not(:last-child)::after, footer nav a:not(:last-child)::after {
+    content: " | ";
     color: #333333;
 }
 #navbar__list {
