@@ -1,0 +1,49 @@
+h2 {
+    font-family: Papyrus;
+    text-align: center;
+}
+
+h1 {
+    font-family: Comic Sans MS;
+}
+
+p {
+    font-family: Times New Roman;
+    text-align: right;
+}
+
+ul li {
+    text-align: center;
+}
+
+li {
+    text-align: center;
+}
+
+h4 {
+    text-decoration: underline;
+    background-color: yellow;
+    border-left: solid 5px yellow;
+    border-right: dotted 10px orange;
+    border-top: dashed 20px blue;
+    border-right: solid 50px grey;
+}
+
+main {
+    background-color: #312714;
+    margin: 25px;
+}
+
+h5 {
+    border: 200px dotted orange;
+    margin: 2px;
+}
+
+.best-container {
+    border: 100px dotted orange;
+    margin: 100px;
+}
+
+.white_bg {
+    background-color: white;
+}
