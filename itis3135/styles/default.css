@@ -30,6 +30,11 @@ p {
     margin-bottom: 1em;
 }
 
+a {
+    color: #730000;
+    text-decoration: none;
+}
+
 /* Footer Styles */
 footer {
     margin-top: 2em;
