@@ -80,15 +80,3 @@ header nav a:not(:last-child)::after, footer nav a:not(:last-child)::after {
     min-width: 100%;
     overflow: auto;
 }
-
-#navbar__list li {
-    cursor: pointer;
-    background-color: #dddddd;
-    color: #000;
-    padding: 8px;
-    display:block;
-    width: 31%;
-    float:left;
-    border:1px solid #000;
-    text-align: center;
-}
