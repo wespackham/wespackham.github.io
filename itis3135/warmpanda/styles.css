@@ -39,7 +39,7 @@ header {
     width: 100%;
 }
 
-.navbar_menu {
+.navbar-menu {
     margin: auto;
     background-color: #d5d5d5;
     width: 100%;
@@ -84,7 +84,7 @@ a {
     transition: color 0.3s ease;
 }
 
-#top_logo {
+#top-logo {
     padding: 0 5px 0 0;
 }
 
