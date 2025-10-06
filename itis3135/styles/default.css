@@ -64,7 +64,6 @@ footer nav a:hover {
     text-decoration: underline;
 }
 
-/* Navigation separators */
 header nav a:not(:last-child)::after, footer nav a:not(:last-child)::after {
     content: " | ";
     color: #333333;
@@ -80,3 +79,26 @@ header nav a:not(:last-child)::after, footer nav a:not(:last-child)::after {
     min-width: 100%;
     overflow: auto;
 }
+
+<!-- desktop -->
+main {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+<!-- tablet -->
+@media (max-width: 992px) {
+    main {
+        width: 95%;
+    }
+}
+
+<!-- phone -->
+@media (max-width: 600px) {
+    main {
+        width: 100%;
+        padding: 0 10px;
+    }
+}
+
