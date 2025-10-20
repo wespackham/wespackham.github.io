@@ -59,25 +59,15 @@ header nav a, footer nav a {
     transition: color 0.3s ease;
 }
 
-footer nav a:hover {
-    color: #004499;
-    text-decoration: underline;
+nav a:hover  {
+    color: #003173;
+    text-decoration: none;
 }
 
 header nav a:not(:last-child)::after, footer nav a:not(:last-child)::after {
-    content: " | ";
+    content: "   |";
     color: #333333;
-}
-#navbar__list {
-    list-style-type: none;
-    color: #FFF;
-    margin: 0 auto 0 auto;
-    padding: 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    min-width: 100%;
-    overflow: auto;
+    text-decoration: none;
 }
 
 <!-- desktop -->
