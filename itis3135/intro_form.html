@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wes Packham's Warm Panda | ITIS3135 | Intro Form</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div data-include="components/header.html"></div>
+
+<main>
+    <h2>Introduction Form</h2>
+
+    <h3>Please submit the form below</h3>
+
+    <form>
+        <fieldset>
+            <legend>Name</legend>
+            <label for="firstName">First Name:</label>
+            <input id="firstName" name="firstName" type="text" placeholder="First name" value="Wes" required>
+            <label for="middleName">Middle Name:</label>
+            <input id="middleName" name="middleName" type="text" placeholder="Middle initial" value="J">
+            <label for="lastName">Last Name:</label>
+            <input id="lastName" name="lastName" type="text" placeholder="Last name" value="Packham" required>
+            <label for="preferredName">Preferred Name:</label>
+            <input id="preferredName" name="preferredName" type="text" placeholder="Preferred name here">
+        </fieldset>
+        <fieldset>
+            <legend>Acknowledgement</legend>
+            <label for="acknowledgementStatement">Enter the following: "I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available." your initials and the date.</label>
+            <input id="acknowledgementStatement" name="acknowledgementStatement" type="text" placeholder="I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available. WP"  required> <br>
+            <label for="acknowledgementDate">Enter the Date:</label>
+            <input id="acknowledgementDate" name="acknowledgementDate" type="text" placeholder="Enter today's date" value="10/26/2025" required>
+        </fieldset>
+        <fieldset>
+            <legend>Mascot</legend>
+            <label for="mascotAdjective">Mascot Adjective: </label>
+            <input id="mascotAdjective" name="mascotAdjective" type="text" placeholder="Enter an adjective that starts with the first letter of your first name" value="Warm" required>
+            <label for="mascotAnimal">Mascot Animal: </label>
+            <input id="mascotAnimal" name="mascotAnimal" type="text" placeholder="Enter an animal that starts with the first letter of your last name" value="Panda" required>
+            <label for="divider">Divider: </label>
+            <input id="divider" name="divider" type="text" placeholder="Enter a divider to be used to seperate your name and your mascot." value="|">
+        </fieldset>
+        <fieldset>
+            <legend>Picture</legend>
+            <label>Upload image: </label>
+            <input type="file" name="file" id="introImage" required>
+            <button type="button" onclick="loadImage()">Click Here to Load</button>
+            <div id="loadImage">
+                <img src="images/alaska.png" alt="Default profile" style="max-width: 300px; margin-top: 10px;">
+            </div>
+            <label for="imageCaption">Caption: </label>
+            <input id="imageCaption" name="imageCaption" type="text" placeholder="Enter a caption for the image" value="With my brother Owen in Alaska. (2025)" required>
+        </fieldset>
+        <fieldset>
+            <legend>Personal Statement</legend>
+            <label for="personalStatement">Personal Statement: </label>
+            <input id="personalStatement" name="personalStatement" type="text" placeholder="Enter your personal statement" style="width: 400px; height: 20px;" value="I am a Junior currently pursuing a B.S. in Computer Science with a concentration in Web/Mobile Developemtn and Software Engineering. I am also working towards a minor in mathematics and am a part of the CCI Honors Program. I work as the Arts & Culture editor for the student newspaper, the Niner Times. In my free time I enjoy thrifting, skating, playing guitar and photography." required>
+        </fieldset>
+        <fieldset>
+            <legend>Background Information</legend>
+            <label for="personalBackground">Personal Background: </label>
+            <input id="personalBackground" name="personalBackground" type="text" placeholder="Input personal background" value="I am originally from Apex, North Carolina and have lived in North Carolina my whole life. I’ve always had an interest in computers and development which is why I decided to pursue a degree in computer science."
+                   style="width: 400px; height: 20px;" required><br>
+            <label for="professionalBackground">Professional Background: </label>
+            <input id="professionalBackground" name="professionalBackground" type="text" placeholder="Input professional background" style="width: 400px; height: 20px;"
+                   value="I have interned at a prosthetics clinic to assist with website development and maintenance." required><br>
+            <label for="academicBackground">Academic Background: </label>
+            <input id="academicBackground" name="academicBackground" type="text" placeholder="Input academic background" style="width: 400px; height: 20px;"
+                   value="I am a third-year pursuing a B.S in Computer Science with a concentration in Web/Mobile Development and Software Engineering, and a minor in mathematics. I was part of an IT program at my high school." required> <br>
+            <label for="primaryComputer">Primary Computer: </label>
+            <input id="primaryComputer" name="primaryComputer" type="text" placeholder="Input your primary computer, OS system, type, and location" style="width: 400px; height: 20px;"
+                   value="Apple, MacOS, Laptop, Desk/Table." required>
+        </fieldset>
+        <fieldset>
+            <legend>Courses</legend>
+            <ul id="courseList"></ul>
+            <button type="button" onClick="addCourse()">Add Course</button>
+        </fieldset>
+        <fieldset>
+            <legend>Quote</legend>
+            <label for="quote">Quote: </label>
+            <input id="quote" name="quote" type="text" placeholder="Enter a quote" value="I may not have been sure about what really did interest me, but I was absolutely sure about what didn't." required>
+            <label for="quoteAuthor">Quote Author: </label>
+            <input id="quoteAuthor" name="quoteAuthor" type="text" placeholder="Input who the quote is from" value="Albert Camus (The Stranger)" required>
+        </fieldset>
+        <fieldset>
+            <legend>Optional Information</legend>
+            <label for="funnyThing">Something Funny To Remember Me: </label>
+            <input id="funnyThing" name="funnyThing" type="text" placeholder="Input something funny that you want to share" style="width: 400px; height: 20px;"
+                   value="I have six brothers.">
+            <br>
+            <label for="shareThing">Something I'd Like to Share: </label>
+            <input id="shareThing" name="shareThing" type="text" placeholder="Enter something you'd like to share" style="width: 400px; height: 20px;">
+        </fieldset>
+        <fieldset>
+            <legend>Link Information</legend>
+            <label for="cltWeb">CLT Web</label>
+            <input id="cltWeb" name="cltWeb" type="url" placeholder="Input your CLT Website link" value="https://webpages.charlotte.edu/wpackham/" required>
+            <label for="github">GitHub</label>
+            <input id="github" name="github" type="url" placeholder="Input your GitHub link" value="https://github.com/wespackham" required>
+            <label for="githubIo">GitHub.io</label>
+            <input id="githubIo" name="githubIo" type="url" placeholder="Input your GitHub.io site" value="https://wespackham.github.io/" required>
+            <label for="freeCodeCamp">freeCodeCamp</label>
+            <input id="freeCodeCamp" name="freeCodeCamp" type="url" placeholder="Input your freeCodeCamp link" value="https://www.freecodecamp.org/wpackham" required> <br>
+            <label for="codecademy">Codecademy</label>
+            <input id="codecademy" name="codecademy" type="url" placeholder="Input your Codecademy link" value="https://www.codecademy.com/profiles/wespackham" required>
+            <label for="linkedIn">LinkedIn</label>
+            <input id="linkedIn" name="linkedIn" type="url" placeholder="Input your LinkedIn link" value="https://www.linkedin.com/in/wespackham" required>
+        </fieldset>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        <button type="button" id="clear">Clear</button>
+    </form>
+</main>
+
+<div data-include="components/footer.html"></div>
+
+<script src="scripts/HTMLInclude.js"></script>
+<script src="scripts/introduction.js"></script>
+</body>
+</html>
